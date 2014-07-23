@@ -1,4 +1,10 @@
-setwd("~/Documents/Coursera/Data Science/3- Getting & Cleaning Data/Course Project")
+t <- tempfile()
+download.file("https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip", t)
+unzip(t, exdir=tempdir())
+unlink(t)
+
+currentDir <- getwd()
+setwd(tempdir())
 
 #import training data X_train.txt
 X_train <- read.csv("./UCI HAR Dataset/train/X_train.txt", header = FALSE, sep="")

@@ -19,3 +19,7 @@ The run_analysis.R script performs the following tasks:
 - Creates a second, independent tidy data set with the average of each variable for each activity and each subject. 
 
 Running the script requires no arguments.
+
+##run_analysis_with_data_download.R
+
+This script performs the same tasks as run_analysis.R but will automatically download and extract the data from the specified URL into the working directory.
